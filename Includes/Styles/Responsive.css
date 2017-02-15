@@ -1,0 +1,991 @@
+.SectionBrowserAll img {
+    max-width: 100%
+}
+
+body {
+    overflow-x: hidden
+}
+
+@media only screen and (max-width: 1167px) {
+    .SocialBox {
+        width: 50%
+    }
+}
+
+@media only screen and (min-width: 960px) and (max-width: 1060px) {
+    .ContainerSmall {
+        width: 94%;
+        margin-left: auto;
+        margin-right: auto
+    }
+    .SectionTableLounge img {
+        margin-left: auto;
+        margin-right: auto
+    }
+    .SectionDashboard .ProductContainer .ProductBoxDesc {
+        width: auto;
+        margin-right: 5%;
+        margin-left: 10%;
+        margin-top: 160px
+    }
+    .SectionDashboard .ProductContainer-2 .ProductBoxDesc {
+        width: auto;
+        margin-left: 10%;
+        margin-right: 10%;
+        margin-top: 160px
+    }
+    #SearchBar {
+        max-width: 90%
+    }
+    .SectionTableLounge .ELounge h2.SubHeading {
+        padding: 0 150px !important
+    }
+    .SectionBrowserAll img {
+        max-width: 90%
+    }
+    .FunctionsColumn {
+        width: 30%;
+        background-color: white;
+        float: left;
+        text-align: left;
+        margin-top: 50px
+    }
+    .FunctionsColumn:nth-child(2) {
+        margin-right: 5%;
+        margin-left: 5%
+    }
+    .FunctionsColumn a {
+        display: block;
+        position: relative;
+        line-height: normal;
+        width: 86%;
+        font-size: 13pt;
+        font-weight: 600;
+        padding-left: 50px
+    }
+    .FunctionsColumn a span {
+        position: absolute;
+        width: 46px;
+        height: 46px;
+        left: 0
+    }
+    body {
+        overflow-x: hidden
+    }
+}
+
+@media only screen and (min-width: 785px) and (max-width: 960px) {
+    .ContainerSmall {
+        width: 94%;
+        margin-left: auto;
+        margin-right: auto
+    }
+    .SectionTableLounge img {
+        margin-left: auto;
+        margin-right: auto
+    }
+    .SectionTableLounge .ELounge h2.SubHeading {
+        padding: 0 150px !important
+    }
+    .SectionFacilities .FacilityBox,
+    .SubPageFacilities .FacilityBox {
+        width: 42% !important;
+        margin-left: 5.5%;
+        margin-bottom: 5.5%;
+    }
+    .SectionFacilities .FacilityBox {
+        height: 40vw
+    }
+    .SectionFame .Portraits .Portrait {
+        width: 25%;
+        text-align: center
+    }
+    .Navigation .NavLink ul li a {
+        padding: 10px 4px;
+    }
+    .SectionText .TextBlock h2.SubHeading,
+    .SectionText .TextBlock h2 {
+        padding: 0 50px !important
+    }
+    .SectionFacilities .SubPageFacilities .FacilityBox {
+        height: 25vw
+    }
+}
+
+@media only screen and (min-width: 640px) and (max-width: 900px) {
+    .ContactNumbers .ContactBox {
+        width: calc(100% / 2);
+        margin-bottom:0px;
+    }
+    
+    .ContactNumbers .ContactBox:nth-child(3) {
+        width:100%;
+    }
+    
+    br.ShowOnTablet {
+        line-height:10;
+        display:block;
+    }
+
+    .ContactNumbers .ContactBox:nth-child(3) > .MoreNumbers {
+        width:calc(100% / 2);
+        float:left;
+    }
+    
+    .ContactNumbers .ContactBox .ContactDeskName {
+        margin-bottom: 15px;
+    }
+
+
+}
+
+@media only screen and (min-width: 0px) and (max-width: 640px) {
+    .ContactNumbers .ContactBox {
+        width: 100%;
+    }
+    
+    br.ShowOnTablet {
+        display:none;
+    }
+
+    .ContactNumbers .ContactBox:nth-child(3) > .MoreNumbers {
+        width:100%;
+    }
+    
+    // .ContactNumbers .ContactBox .ContactDeskName {
+    //     margin-bottom: 15px;
+    // }
+    // 
+    
+}
+@media only screen and (min-width: 0px) and (max-width: 830px) {
+    .ColumnHeader { 
+        margin-bottom:10px;
+        margin-top: 30px;
+    }
+    .ContactDeskName {
+        margin: 25px 0 0 0 !important;
+    }
+    .MoreNumbers {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+    main {
+        margin-top: 0;
+    }
+    .StickyHeader {
+        overflow:hidden;
+        height:60px;
+    }
+    .TopHeader{
+        display: none;
+    }
+    nav#TopNav{
+        top:0;
+        transition:0.5s;
+    }
+    .MobileNavIsActive {
+        overflow:hidden;
+        height:100vh;
+    }
+    .Navigation .NavLink {
+        display:block !important;
+        position:relative;      
+        margin-top: 60px;      
+    }
+
+    .Navigation .NavLink ul li a {
+        text-align:left;
+    }
+
+    .Navigation .NavLink ul li {
+        display: block;
+        margin-left:2.5%;
+    }
+    
+    .Navigation .Logo {
+        position:relative;
+        margin-left:3%;
+    }
+
+    .Navigation .Logo img {
+        width: 145px;
+        height: 38px;
+        margin-top: 3px;
+    } 
+
+    .Navigation .MobileNavBtn{
+        display:block;
+        right:3%;
+    }
+    
+    #TopNav.ToggleNav {
+
+        height: 100vh;
+        width:100% ;
+        
+
+    }   
+    .ContainerSmall.Navigation {
+        height:100vh;
+        width:100vw;
+        overflow-y:auto;
+        overflow-x: hidden;
+    }
+    .Navigation .NavLink ul li input[type=search].MenuSearch { 
+        top: -55px;
+        left: 3%;
+        right:0;
+    }
+    .Navigation .NavLink .Results { 
+        top: -7px;
+        left: 3%;
+    }
+    .Navigation #MobileLanguageChooser {
+        display:block;
+        top:50px;
+    }
+    .Navigation #MobileMap,
+    .Navigation #MobileTables {
+        display: block;
+    }
+
+    .TopHeaderLeft {
+        position: relative;
+        cursor: pointer;
+        display: block;
+        background-color: #efefef;
+        font-size: 9.5pt;
+        font-weight: 400;
+        color: #8a8a8a;
+        font-family: 'Titillium Web',sans-serif;
+        padding: 0;
+        box-sizing: border-box;
+        width: 108%;
+        margin-left: -3%;
+        padding-left: calc(3% + 8px);
+        height:auto;
+    }
+
+    .Navigation .NavLink .TopHeaderLeft a {
+        font-size: 9.5pt;
+        font-weight: 400;
+        color: #8a8a8a;
+        font-family: 'Titillium Web',sans-serif;
+        padding: 0;
+        text-transform: uppercase;
+    }
+
+    .Navigation .NavLink .DropDown:hover > ul, .Navigation .NavLink .DropDown:hover ul{
+        // pointer-events: none !important
+    }
+
+    .TopHeaderLeft span.Text {
+        color: #8a8a8a;
+    }
+
+    .TopHeaderLeft:nth-child(1) {
+        float: none;
+        padding-right: 0;
+    }
+
+    .TopHeaderLeft  .LanguagePicker {
+        display:none;
+        width: 108%;
+        margin-left: -6%;
+        padding-left: 5%;
+        background-color: #efefef;
+
+    }
+    .LanguagePicker ul li {
+        margin-left:0!important;
+    }
+    .TopHeaderLeft  .LanguagePicker ul {
+        line-height:25px;
+    }
+    .TopHeaderLeft  .LanguagePicker ul a {
+        padding-left:1% !important;
+    }
+
+    .TopHeaderLeft  .LanguagePicker li {
+        font-size: 9.5pt;
+        font-weight: 400;
+        color: #8a8a8a;
+        font-family: 'Titillium Web',sans-serif;
+    }
+
+    .TopHeaderLeft   span.Text{
+        padding-left:5px;
+    }
+    .TopHeaderLeft .Icon {
+        left:0;
+    }
+
+    .Navigation .NavLink .DropDown > ul{ 
+        position:relative;
+        top:0;
+        padding-top:0px;
+    }
+
+    .SectionHero {
+        margin-top:55px;
+    }
+    .SectionTekstsideHero,
+    .SectionLoungeHero,
+    .SectionContactHero,
+    .SectionTekstsideHero .Overlay,
+    .SectionLoungeHero .Overlay,
+    .SectionContactHero .Overlay{
+        padding-top: 55px
+    }
+    .SectionTekstsideHero h1.Heading,
+    .SectionLoungeHero h1.Heading,
+    .SectionContactHero h2.Heading{
+        font-size: 32px
+    }
+    .SectionHero h2.SubHeading {
+        padding: 0 10px 40px 10px !important;
+        font-size: 22px
+    }
+    .ContainerSmall {
+        width: 94%;
+        margin-left: auto;
+        margin-right: auto
+    }
+    .SectionText {
+        padding: 20px 0 10px 0
+    }
+    .ImageBanner {
+        width: initial;
+    }
+    #SearchBar {
+        max-width: 90%
+    }
+    .SectionTableLounge img {
+        margin-left: auto;
+        margin-right: auto
+    }
+    .SectionTableLounge .FlightsWrapper {
+        width: 100%;
+        margin-top: 50px;
+        margin-top: -10px
+    }
+    .FlightsTable {
+        width: 94% !important;
+        position: absolute
+    }
+    .TableLink {
+        display: none
+    }
+    .SectionTableLounge .FlightsHeader {
+        width: 50.5% !important;
+        background-color: #152c4a !important;
+        cursor: pointer
+    }
+    .SectionTableLounge .Selected {
+        background-color: #203e64 !important;
+        color: white !important
+    }
+    .CloseFull {
+        display: none !important;
+    }
+    .HeaderContent {
+        display: none !important;
+    }
+    .Filters {
+        top:70px;
+    }
+    .Filters.MapPage {
+        height: 50px;
+    }
+    .Filters.FullHeight {
+        height: 79px;
+    }
+    .ArrivalsDepartures .FlightsTable {
+        width: 100vw !important;
+        margin-top: 130px;
+    }
+
+    .ArrivalsDepartures .FlightsTable .DateRow {
+        display: table-row;
+    }
+
+    .ArrivalsDepartures table {
+        width: 100vw !important;
+    }
+    .ArrivalsDepartures table tr td:nth-child(-n+3),
+    .ArrivalsDepartures table tr td:last-child,
+    .ArrivalsDepartures table tr th:nth-child(-n+3),
+    .ArrivalsDepartures table tr th:last-child {
+        display: none;
+    }
+    .ArrivalsDepartures .FlightsTable th,
+    .ArrivalsDepartures .FlightsTable td {
+        text-align: center !important;
+        font-size: 13px;
+    }
+    .Selected#FrontPageDep {
+        background-image: url("../Images/depWhiteBG.png") !important
+    }
+    .Selected#FrontPageArr {
+        background-image: url("../Images/arrWhiteBG.png") !important
+    }
+    .SectionTableLounge .FlightsTable#Departures .FlightsHeader {
+        margin-top: -50px !important;
+        text-align: center;
+    }
+    .SectionTableLounge .FlightsTable#Arrivals .FlightsHeader {
+        float: right;
+        margin-top: -50px !important;
+        text-align: center;
+    }
+    .SectionTableLounge .TableHeader {
+        padding-left: 0px;
+    }
+    .SectionTableLounge .FlightsTable#Arrivals table {
+        display: none
+    }
+    .ELounge h2.SubHeading {
+        padding: 0 20px !important
+    }
+    .SectionBannerLink#FacebookSection {
+        padding: 0
+    }
+    .SectionBannerLink .BannerContent#FacebookBanner {
+        margin-top: 15px
+    }
+    .SectionBannerLink iframe {
+        padding: 35px 0
+    }
+    .SectionBannerLink h2.SubHeading {
+        // padding: 0 50px !important
+    }
+    .SectionText .TextBlock p {
+        max-width: 90%;
+        margin: 20px auto;
+    }
+    .SectionText .TextBlock table {
+        margin: 0 auto;
+        width: 90%;
+    }
+    .SectionText .TextBlock .HighlightedBox {
+        box-sizing: border-box;
+        width: 90%;
+        margin: 0 auto 30px auto;
+    }
+    .SectionFacilities .FacilityBox,
+    .SectionFacilities .SubPageFacilities .FacilityBox {
+        width: 40%;
+        margin-left: 7vw;
+        margin-bottom: 7vw;
+    }
+
+    .SectionFacilities .FacilityBox#Facility1:hover, 
+    .SectionFacilities .FacilityBox#Facility2:hover, 
+    .SectionFacilities .FacilityBox#Facility3:hover, 
+    .SectionFacilities .FacilityBox#Facility4:hover, 
+    .SectionFacilities .FacilityBox#Facility5:hover, 
+    .SectionFacilities .FacilityBox#Facility6:hover, 
+    .SectionFacilities .FacilityBox#Facility7:hover, 
+    .SectionFacilities .FacilityBox#Facility8:hover {
+        background-size: 100% 100%;
+    }
+
+    .SectionFacilities .FacilityBox {
+        height: 38vw
+    }
+    .SectionFacilities .FacilityBox h4,
+    .SectionFacilities .SubPageFacilities .FacilityBox h4 {
+        font-size: 17px
+    }
+    .SectionBannerLink {
+        padding: 20px 0
+    }
+    .SectionBannerLink .BannerContent {
+        width: calc(100% - 40px);
+        padding:20px !important;
+        display: block;
+        margin-top: 0px;
+        left:0;
+        text-align: center
+    }
+    .SectionBannerLink .BannerContent.NoAbsolute {
+        position:relative;
+        padding:0!important;
+        top: 0%;
+        transform: none;
+        width:100%;
+    }
+
+    .SectionBannerLink h2.SubHeading,
+    .SectionBannerLink h2,
+    .SectionBannerLink h3 {
+        text-align: center !important;
+    }
+    .SectionBannerLink .BannerBtnWrapper {
+        margin: 30px auto;
+        margin-bottom: 0;
+    }
+    .SectionBannerLink .BannerImage {
+        width: 100%;
+        text-align: center;
+        margin-top: 30px;
+    }
+    .SectionBannerLink .BannerImage img {
+        width: 70%
+    }
+    .SectionTestimonials {
+        padding: 20px 0
+    }
+    .Testimonial {
+        width: 100%
+    }
+    .Testimonial .ProfilePic {
+        width: 100%;
+        text-align: center
+    }
+    .Testimonial .Quote {
+        width: 70%;
+        text-align: center;
+        margin: 0 auto;
+        display: block
+    }
+    .Testimonial .Quote h2 {
+        text-align: center
+    }
+    .SectionFame .Portraits .Portrait {
+        width: 33.33%;
+        text-align: center
+    }
+    .SectionText .TextBlock h2.SubHeading,
+    .SectionFame .TextBlock h2.SubHeading,
+    h2.Image {
+        width:90%;
+        margin:auto;
+    }
+    .SectionFacilities .SubPageFacilities .FacilityBox {
+        height: 25vw
+    }
+    .FooterBar {
+        line-height: normal;
+    }
+    .Social {
+        margin-top: 10px
+    }
+    #MobileNav {
+        display: block
+    }
+    .SocialBox {
+        width: 100%
+    }
+    .NavColumn {
+        width: 33.3%;
+        min-height: 145px
+    }
+    .FooterColumns {
+        margin-top: -25px
+    }
+
+    .SectionText .TextBlock {
+        width: 100%;
+    }
+        .Imp {
+            width:94% !important;
+        }
+        // .ContactNumbers .ContactBox {
+        //     float: none;
+        //     width: 100%;
+        //     margin-bottom:30px;
+        // }
+        // .ContactNumbers .ContactBox .ContactDeskName {
+        //     margin-bottom: 15px;
+        // }
+        .SectionText .TextBlock > div.RowWidth60,
+        .SectionText .TextBlock > div.RowWidth50,
+        .SectionText .TextBlock > div.RowWidth40{
+            width: 100%;
+            float: none !important;
+        }
+
+        .SectionText .TextBlock .PaddingLeft {
+            padding-left: 0;
+        }
+
+        .SectionText .TextBlock .PaddingRight {
+            padding-right: 0;
+        }
+
+        .SectionText .TextBlock div.video-container {
+            width: 90%;
+            margin: 0 auto;
+        }
+
+        .SectionText .TextBlock > div.RowWidth100 figure,
+        .SectionText .TextBlock > div.RowWidth60 figure,
+        .SectionText .TextBlock > div.RowWidth50 figure,
+        .SectionText .TextBlock > div.RowWidth40 figure{
+            text-align: center;
+            width: 90%;
+            overflow: hidden;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    .xwarecms {
+        margin-right: 5px;
+    }
+
+    .Copyright {
+        margin-left: 5px;
+    }
+
+    #CMSContent.SectionText {
+        padding: 20px 0 10px 0;
+    }
+
+    .SectionText .TextBlock > div.RowWidth100 h3,
+    .SectionText .TextBlock > div.RowWidth60 h3
+    .SectionText .TextBlock > div.RowWidth50 h3
+    .SectionText .TextBlock > div.RowWidth40 h3,
+    .SectionText .TextBlock h2 {
+        width:90%;
+        margin-left:auto;
+        margin-right:auto;
+    }
+
+    .SectionText .TextBlock h2 {
+        font-size:24px;
+    }
+    .TextBlock ul {
+        width: 90%;
+        padding: 0;
+        margin: 0;
+        width: 90%;
+        margin: auto;
+        padding-left: 2%;
+        box-sizing: border-box;
+    }
+    .TextBlock ul li {
+        margin-bottom:15px;
+        position:relative;
+    }
+
+    .Responsive {
+        padding:0 !important;
+    }
+
+    .SectionText .TextBlock > div.RowWidth100 h2,
+    .SectionText .TextBlock > div.RowWidth60 h2,
+    .SectionText .TextBlock > div.RowWidth50 h2,
+    .SectionText .TextBlock > div.RowWidth40 h2 {
+        margin:0 auto;
+        padding:0px !important;
+    }
+
+    .SectionText .TextBlock > div.RowWidth100 br,
+    .SectionText .TextBlock > div.RowWidth60 br,
+    .SectionText .TextBlock > div.RowWidth50 br,
+    .SectionText .TextBlock > div.RowWidth40 br {
+        display:block;
+    }
+
+    .SectionText .TextBlock > div.RowWidth60 h3,
+    .SectionText .TextBlock > div.RowWidth50 h3,
+    .SectionText .TextBlock > div.RowWidth40 h3 {
+        margin-left:5%;
+        margin-right:5%;
+        width:90%;
+    }
+
+    .SectionText .TextBlock > div.RowWidth100 .CMSGoogleMaps,
+    .SectionText .TextBlock > div.RowWidth60 .CMSGoogleMaps,
+    .SectionText .TextBlock > div.RowWidth50 .CMSGoogleMaps,
+    .SectionText .TextBlock > div.RowWidth40 .CMSGoogleMaps {
+        height:35vh;
+        width:90%;
+        margin-left:5%;
+    }
+
+    .Navigation .NavLink ul li input[type=search].MenuSearch:focus, .Navigation .NavLink .Results {
+        width: 93.5%;
+    }
+    .SearchWrapper div {
+        position:relative;
+        width: 90%;
+        margin-left:auto;
+        margin-right:auto;
+    }
+
+    .CaptionWrapper {
+        display:none;
+    }
+}
+
+@media only screen and (min-width: 0px) and (max-width: 489px) {
+    #JutlandBanner, #SkiBanner, #TransportBanner {
+        box-sizing: initial;
+    }
+    .SectionHero {
+        height: 330px;
+        padding-top: 55px;
+        background: url("../Images/HeroMobileBG.jpg") no-repeat;
+        background-size: cover
+    }
+    .SectionHero h1.Heading {
+        font-size: 33px;
+        padding-top: 30px
+    }
+    .SectionHero h2.SubHeading {
+        font-size: 20px;
+        padding: 0 10px 25px 10px !important
+    }
+    #SearchWrapper div {
+        width:100%;
+    }
+    #SearchBar {
+        padding-left:15px;
+        padding-right:30px;
+        font-size:16px;
+    }
+    #SearchButton {
+        width:50px;
+        background-color: #203e64;
+        background-size: 100%;
+    }
+    #SearchBar, #SearchButton {
+
+        height: 58px;
+        background-position: right center;
+    }
+    //     #SearchButton {
+    //     background: url("../Images/plane.png") center no-repeat;
+    //     height:68px;
+    //     width:68px;
+    //     box-shadow: 0px 4px 13px 0px rgba(0, 0, 0, 0.18);
+    //     background-color: #fff;
+    //     border:none;
+    //     outline:none;
+    //     position:absolute;
+    //     right:0;
+    //     top:0;
+    //     cursor:pointer;
+    //     transition:all 0.4s;
+    // }
+    .SectionTableLounge h3,
+    .SectionBannerLink h3,
+    .SectionTestimonials h3,
+    .SectionBannerLink .BannerContent#Jutland h3,
+    .SectionText h3,
+    .SectionFame h3 {
+        font-size: 24px;
+        line-height: 30px
+    }
+    .SectionText .TextBlock > div.RowWidth100 h2,
+    .SectionText .TextBlock > div.RowWidth60 h2
+    .SectionText .TextBlock > div.RowWidth50 h2
+    .SectionText .TextBlock > div.RowWidth40 h2 {
+        font-size: 24px;
+        line-height: 30px;
+    }
+    .SectionTableLounge .ELounge h2.SubHeading,
+    .SectionBannerLink h2,
+    .SectionBannerLink h2.SubHeading {
+        font-size: 16px
+    }
+    .SectionTableLounge .FlightsWrapper {
+        font-size: 16px;
+        height: 290px;
+        margin-top: 50px !important
+    }
+    .SectionTableLounge .ELounge {
+        margin: 30px auto 20px auto
+    }
+    .PlaneImg {
+        padding-left: 15px !important
+    }
+    .SectionTableLounge .TableHeader {
+        padding-left: 50px;
+    }
+    .SectionTableLounge .FlightsTable {
+        font-size: 15px
+    }
+    .SectionTableLounge .FlightsHeader {
+        margin-top: 0px !important;
+        height: 58px
+    }
+    .Testimonial .ProfilePic img {
+        margin: 0 50px 10px 50px
+    }
+    .Testimonial img#Previous,
+    .Testimonial img#Next {
+        display: inline-block;
+        margin: 0 0 40px 0;
+        cursor: pointer;
+        position: absolute;
+        top: 43%
+    }
+    .Testimonial img#Previous {
+        left: 20%
+    }
+    .Testimonial img#Next {
+        right: 20%
+    }
+    .Portrait img#Previous,
+    .Portrait img#Next {
+        display: inline-block;
+        margin: 0 0 40px 0;
+        cursor: pointer;
+        position: absolute;
+        top: 59px
+    }
+    .Portrait img#Previous {
+        left: 10%
+    }
+    .Portrait img#Next {
+        right: 10%
+    }
+    .SectionFacilities .SubPageFacilities .FacilityBox {
+        height: 25vw
+    }
+    .SectionTableLounge {
+        margin-left: 0 !important
+    }
+    .FlightsTable {
+        width: 100% !important
+    }
+    .SectionAd,
+    .Ad {
+        display: none
+    }
+    .Video {
+        width: 100% !important
+    }
+    .Video video {
+        width: 100% !important
+    }
+    // .ImageBanner {
+    //     width: 100% !important
+    // }
+    // .ImageBanner img {
+    //     width: 100% !important
+    // }
+    .SectionFame .Portraits .Portrait {
+        width: 100%;
+        text-align: center
+    }
+    .SectionText .TextBlock .HighlightedBox {
+        padding: 45px 25px;
+    }
+
+    .Filters.FullHeight {
+        height: 79px;
+         height: 50px;
+    }
+
+    .Filters.MapPage {
+        height: 79px;
+    }
+    .Filters.FullHeight {
+        height: 50px;
+    }
+    .Filters .Buttons {
+        text-align: center;
+    }
+
+    .Filters .Buttons button {
+        line-height: 38px;
+    }
+
+    .Filters .Buttons button.Active,
+    .Filters .Buttons button:hover {
+        line-height: 35px;
+    }
+
+    .Filters .Buttons.Mobile .Checkboxes {
+        display: block;
+    }
+
+    .ArrivalsDepartures .Selected#dep,
+    .ArrivalsDepartures .Selected#arr,
+    .ArrivalsDepartures .FlightsHeader#dep,
+    .ArrivalsDepartures .FlightsHeader#arr {
+        background-position: -12px 0;
+    }
+
+    .ArrivalsDepartures .FlightsHeader#arr {
+        margin-right: 0;
+        float: right;
+    }
+
+    .ArrivalsDepartures .FlightsHeader#dep {
+        margin-left: -1px;
+    }
+
+    .ArrivalsDepartures .FlightsWrapper {
+        font-size: 16px;
+    }
+
+    .ArrivalsDepartures .FlightsTable .TableHeader {
+        text-align: center;
+        width: 90%;
+        padding-left: 15px;
+    }
+
+    .ArrivalsDepartures .FlightsHeader {
+        width: 48vw;
+    }
+
+    .FooterBar {
+        height: auto;
+        margin-bottom: 0 !important
+    }
+    .FooterNav {
+        margin: 0 auto
+    }
+    .NavColumn {
+        width: 100%;
+        margin-left: -10px;
+        padding-left: 5%;
+        border-bottom: thin solid #d7d7d7;
+        position: relative;
+        min-height: 0px
+    }
+    .NavColumn a {
+        line-height: 50px
+    }
+    .NavLinks {
+        display: none;
+        margin-bottom: 20px
+    }
+    .NavColumn img {
+        display: inline-block;
+        position: absolute;
+        top: 36.5px;
+        right: 20px;
+        cursor: pointer
+    }
+    .ColumnHeader {
+        font-size: 17px;
+        margin-top: 26.5px;
+        margin-bottom: 26.5px
+    }
+    .FooterColumns {
+        margin-bottom: 0px
+    }
+}
+
+@media only screen and (min-width: 350px) and (max-width: 392px) {
+    .FooterBar {
+        margin-top: -8px !important
+    }
+}
+
+@media only screen and (min-width: 300px) and (max-width: 350px) {
+    .FooterBar {
+        margin-top: -20px !important
+    }
+    .SectionFacilities .FacilityBox h4,
+    .SectionFacilities .SubPageFacilities .FacilityBox h4 {
+        font-size: 15px !important;
+    }
+}

@@ -1,0 +1,2412 @@
+body{
+	padding: 0;
+	margin: 0;
+	background-color: #fff;
+	font-family: 'Titillium Web', sans-serif;
+	-webkit-font-smoothing: antialiased;
+}
+section, aside, nav, main{
+	display: block;
+}
+
+h1, h2, h3, p {
+	padding: 0;
+	margin: 0;
+}
+p {
+	color: #454545;
+}
+main {
+	margin-top: 120px;
+	min-height: 70vh;
+}
+img{
+	border: 0;
+}
+.ShowOnTablet {
+	display:none;
+}
+.NoMargin-B{
+	margin-bottom: -4px;
+}
+.ClearFloat {
+	clear: both;
+}
+.ContainerLarge{
+	width: 100%;
+	display: block;
+	position: relative;
+}
+
+.ContainerLarge.ArrivalsDepartures {
+	background-color: #f6f6f6;
+	height: 100vh;
+}
+
+.ContainerLarge .MapContainer #Map{
+	height: 100vh;
+}
+.ContainerSmall {
+	width: 1050px;
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+}
+.RelativeContainer{
+	position:relative;
+}
+
+// .FullPageHeader {
+// 	// height: 236px;
+// 	// background-color: rgba(32, 62, 100, 0.902);
+// 	position: relative;
+// 	max-height: 0;
+// 	// z-index: 10;
+// }
+
+	.HeaderContent{
+		display: none;
+    	margin: 0 auto;
+  		max-height: 50px;
+  		position: relative; 
+	}
+
+		.HeaderContent .FullHeaderImage {
+			position: relative;
+			max-height: 30px;
+			max-width: 50px;
+			display: table-cell;
+			vertical-align: middle;
+			padding-right: 10px;
+		}
+
+		.HeaderContent h2 {
+			line-height: 53px;
+		    color: #203e64;
+		    text-transform: uppercase;
+		    font-size: 22px;
+		    display: table-cell;
+		}
+
+	.ContainerSmall.CloseIcon {
+		position:relative;
+	}
+
+	.CloseFull {
+		display: none;
+	    position: absolute;
+	    top: -43px;
+	    right: 0;
+	    cursor: pointer;
+	}
+
+	.ArrivalsDepartures .CaptionWrapper{
+		position:absolute;
+		top:122px;
+		text-align:center;
+	}
+	.CaptionWrapper {
+		width:100%;
+		background-color:#fff;
+		padding:13.5px 0;
+		border-bottom: 1px solid #e2e2e2;
+	}
+
+	.CaptionHeader {
+    	margin: auto;
+		display:table;
+	}
+		.CaptionHeader .FullHeaderImage {
+			position: relative;
+			max-height: 30px;
+			max-width: 50px;
+			display: table-cell;
+			vertical-align: middle;
+			padding-right: 10px;
+			padding-top: 5px;
+		}
+		.CaptionHeader span {
+			position: relative;
+			display: table-cell;
+			vertical-align: middle;
+			line-height: 53px;
+			color: #203e64;
+			text-transform: uppercase;
+			font-size: 22px;
+			font-weight:700;
+		}
+
+.TopHeader{
+	background-color: #203e64;
+	font-size: 9.5pt;
+	font-weight: 400;
+	color: #fff;
+	font-family: 'Titillium Web', sans-serif;
+	transition: none !important;
+}
+	.TopHeaderLeft{
+		height: 40px;
+	    line-height: 40px;
+	    padding-left: 20px;
+	    padding-right: 10px;
+	    float: right;
+	    position: relative;
+	    cursor: pointer;
+	    font-weight: 600;
+    	font-size: 13.5px;
+    	color: #538cbf;
+	}
+	.TopHeaderLeft.ChooseLanguage span.Text {
+		// color: #fff;
+	}
+	.TopHeaderLeft.Active span.Text a,
+	.TopHeaderLeft:hover span.Text a {
+		color: #fff;
+	}
+	.TopHeaderLeft:nth-child(1){
+		float: left;
+		padding-right: 20px;
+	}
+	.TopHeaderLeft#ArrivalsDepartures {
+		border-right: 1px solid #1a3250;
+		background: url("../Images/Planes2.png") left no-repeat;
+		padding-left: 40px;
+	}
+	.TopHeaderLeft#Destinations {
+		border-right: 1px solid #1a3250;
+		border-left: 1px solid #1a3250;
+		background: url("../Images/Globe2.png") left no-repeat;
+		padding-left: 45px;
+	}
+	.TopHeaderLeft#ArrivalsDepartures.Active,
+	.TopHeaderLeft#ArrivalsDepartures:hover {
+		background-color: #1a3250;
+		background: url("../Images/PlanesWhite2.png") left no-repeat;
+	}
+	.TopHeaderLeft#Destinations.Active,
+	.TopHeaderLeft#Destinations:hover {
+		background-color: #1a3250;
+		background: url("../Images/GlobeWhite2.png") left no-repeat;
+	}
+
+	.TopHeaderLeft span.Text a {
+		text-decoration: none;
+		color: #538cbf;
+    	text-transform: uppercase;
+	}
+
+	.TopHeaderLeft span.Text {
+		color: #fff;
+	}
+
+	.TopHeaderLeft .Icon {
+		height: 16px;
+	    width: 16px;
+	    position: relative;
+	    top: 3px;
+	    right: 6px;
+	    display: inline-block;
+	}
+	
+	.TopHeaderLeft .Icon.DAFlag {
+		background: url("../Images/DenmarkFlag.png") no-repeat;
+	}
+	.TopHeaderLeft .Icon.ENFlag {
+		background: url("../Images/EnglandFlag.png") no-repeat;
+	}
+
+	.TopHeaderLeft .Icon.DownArrow {
+		background: url("../Images/DownArrow.png") no-repeat;
+		left: 7px;
+   		top: 9px;
+	}
+	.ChangeArrow {
+		top: -2px !important;
+	    -moz-transform: scaleY(-1);
+		-webkit-transform: scaleY(-1);
+		-o-transform: scaleY(-1);
+		transform: scaleY(-1);
+		-ms-filter: fliph; /*IE*/
+		filter: fliph; /*IE*/
+	}
+	.TopHeaderLeft .Icon.Destinationer {
+		background: url("../Images/globe.png") no-repeat;
+		height: 24px;
+	    width: 22px;
+	    top: 9px;
+	}
+	.TopHeaderLeft .Icon.Afgange {
+		background: url("../Images/planes.png") no-repeat;
+		height: 24px;
+	    width: 22px;
+	    top: 7px;
+	}
+	.TopHeader .LanguagePicker {
+		position: absolute;
+	    width: 100%;
+	    background-color: #203e64;
+	    z-index: 999;
+	    left: 1px;
+	    border-bottom-left-radius: 4px;
+	    border-bottom-right-radius: 4px;
+	    display: none;
+	    transition: none;
+	}
+		.TopHeader .LanguagePicker ul{
+			list-style-type: none;
+			margin: 0 20px;
+			padding: 0;
+			transition: none;
+		}	
+			.TopHeader .TopHeaderLeft.ChooseLanguage .LanguagePicker span.Text {
+				color: #538cbf;
+			}
+			.TopHeader .TopHeaderLeft.ChooseLanguage .LanguagePicker a {
+				text-decoration: none;
+			}
+			.TopHeader .LanguagePicker ul li{
+				list-style-type: none;
+				
+				padding: 0;
+			}
+			.TopHeader .TopHeaderLeft.ChooseLanguage .LanguagePicker span.Text:hover{
+				color: #fff;
+			}
+// nav#TopNav {
+//     height: 68px;
+// }
+.Navigation {
+	margin: 8px auto;
+    transition: none;
+    position: relative;
+}
+	.Navigation .Logo{
+		left: 0;
+		position: absolute;
+	}
+	.Navigation .Logo#MobileLogo{
+		display: none;
+		margin: 5px 0;
+	}
+	.Navigation .NavLink{
+		right: 0;
+		margin-top: 5px;
+		position: absolute;
+	}
+
+		.Navigation .NavLink .Results {
+			position: absolute;
+			right: 0;
+			top: 44px;
+			width: 300px;
+			// display: none;
+			border-radius: 4px;
+			top:46px;			
+			border-bottom:none;
+			border-radius:4px;
+			overflow:hidden;
+			z-index:100000000;
+		}
+
+			
+
+			.Navigation .NavLink .Results a:first-child li{
+				border-top: 2px solid #ccc;
+			}
+
+			.Navigation .NavLink .Results li {
+				list-style: none;
+				padding: 5px 10px;
+				background-color: #fff;
+				border-bottom: 2px solid #ccc;
+				border-left:2px solid #ccc;
+				border-right:2px solid #ccc;
+
+			}
+
+			.Navigation .NavLink .Results a.HoverSearchItem > li {
+				background-color: #ccc;
+			}
+			.Navigation .NavLink .Results li span {
+				color: #454545;
+				font-weight: 400;
+			}
+
+			.Navigation .NavLink .Results a {
+				text-decoration: none;
+				display:block;
+				font-weight: 600;
+				color: #558dbd;
+			}
+
+	.Navigation .NavLink ul {
+		list-style-type: none;
+		margin: 0;
+		padding: 0;
+	}
+		.Navigation .NavLink ul li {
+			display: inline-block;
+			cursor:pointer;
+		}
+			.Navigation .NavLink ul li a {
+			    display: block;
+			    padding: 8px;
+			    text-align: center;
+			    text-decoration: none;
+		        font-weight: 600;
+    			font-size: 12pt;
+			    color: #558dbd;
+			    transition: 0.5s;
+			}
+			.Navigation .NavLink ul li:last-child a {
+			    margin-right: 30px;
+			}
+
+			.Navigation .NavLink .DropDown {
+				position:relative;
+			}
+			
+			@media only screen and (min-width: 831px) and (max-width: 3000px) {
+				.Navigation .NavLink .DropDown.NonIpad:hover > ul,
+				.Navigation .NavLink .DropDown.NonIpad:hover ul:hover{
+					display:block;
+				}
+			}
+
+			.Navigation .NavLink .DropDown > ul{
+				display:none;
+				padding: 0 10px;
+				position:absolute;
+				background-color: #fff;
+				transition: 0.5s;
+				top:38px;
+				padding-top:20px;
+			}
+			.Navigation .NavLink .DropDown > ul.OpenDropDown {
+				display:block;		
+				transition: 0.5s;		
+			}
+				.Navigation .NavLink .DropDown > ul li {
+					display:block;
+					transition: 0.5s;
+				}
+					.Navigation .NavLink .DropDown > ul li a {
+						text-align:left;
+					}
+				.Navigation .NavLink .DropDown > ul li a:last-child{
+					margin-left:0;
+					margin-right:0;
+				}
+
+
+			.Navigation .NavLink ul li input[type=search].MenuSearch {
+			    width: 30px;
+			    position: absolute;
+			    top: -2.5px;
+			    cursor: pointer;
+			    right: 0;
+			    box-sizing: border-box;
+			    border: none;
+			    outline: none;
+			    border-radius: 4px;
+			    font-size: 16px;
+			    background-color: white;
+			    background-image: url('../Images/mag-glass.png');
+			    background-position: 10px 12px;
+			    background-repeat: no-repeat;
+			    padding: 12px 20px;
+			    -webkit-appearance: none;
+			    -webkit-transition: width .4s ease-in-out;
+			    transition: width .4s ease-in-out;
+			}
+			.Navigation .NavLink ul li input[type=search].MenuSearch:focus {
+				width: 300px;
+			    padding: 12px 20px 12px 40px;
+			    border: 2px solid #ccc;
+			    cursor: text;
+			}
+			.Navigation .NavLink ul li a img {
+				vertical-align: middle;
+			}
+			.Navigation .NavLink ul li a.active, 
+			.Navigation .NavLink ul li a:hover  {
+				color: #203e64;
+			}	
+				.StickyTopHeader { 
+					transition: none;
+					position: fixed;
+					//height: 41px;
+					z-index: 1454545;
+					top: 0;
+				}
+				.StickyHeader {
+					top:40px;
+					transition: none;
+					position: fixed;
+		    	 	height: 70px;
+   	 				padding: 5px 0;
+		    	 	width: 100%;
+		    	 	z-index: 10;
+		    	 	background-color : white;
+		    	 	-webkit-box-shadow: 0px 1px 0px 0px rgba(0, 0, 0, 0.1);;
+					-moz-box-shadow: 0px 1px 0px 0px rgba(0, 0, 0, 0.1);
+					box-shadow: 0px 1px 0px 0px rgba(0, 0, 0, 0.1);
+					transition: padding .4s ease-in-out;
+				}
+				.NoPadding {
+					padding: 0;
+				}
+		.Navigation .NavLink ul:nth-child(1) > li:nth-last-child(2){
+			margin-bottom: 50px;
+		}
+		.Navigation #MobileMap,
+		.Navigation #MobileTables {
+			display:none;
+		}
+		.Navigation #MobileLanguageChooser {
+			display:none;
+		}
+			.Navigation #NavSearchIcon {
+			    right: 50px;
+				top: 7px;
+				display: none;
+			}
+
+
+
+
+
+
+			.MobileNavBtn {
+				display:none;
+				cursor: pointer;
+				position: absolute;
+				right: 0;
+				padding-right: 0%;
+				overflow:hidden;
+				width: 45px;
+				height: 45px;
+				top:3px;
+				-webkit-transform: rotate(0deg);
+				-moz-transform: rotate(0deg);
+				-o-transform: rotate(0deg);
+				transform: rotate(0deg);
+				-webkit-transition: .5s ease-in-out;
+				-moz-transition: .5s ease-in-out;
+				-o-transition: .5s ease-in-out;
+				transition: .5s ease-in-out;
+
+			}
+			.MobileNavBtn span {
+				display: block;
+				position: absolute;
+				height: 2px;
+				width: 100%;
+				background: #203e64;
+				opacity: 1;
+				left: 0;
+				-webkit-transform: rotate(0deg);
+				-moz-transform: rotate(0deg);
+				-o-transform: rotate(0deg);
+				transform: rotate(0deg);
+				-webkit-transition: .25s ease-in-out;
+				-moz-transition: .25s ease-in-out;
+				-o-transition: .25s ease-in-out;
+				transition: .25s ease-in-out;
+			}
+
+			.MobileNavBtn span:nth-child(1) {
+				top: 8px;
+				-webkit-transform-origin: left center;
+				-moz-transform-origin: left center;
+				-o-transform-origin: left center;
+				transform-origin: left center;
+			}
+
+			.MobileNavBtn span:nth-child(2) {
+				top: 18px;
+				-webkit-transform-origin: left center;
+				-moz-transform-origin: left center;
+				-o-transform-origin: left center;
+				transform-origin: left center;
+			}
+
+			.MobileNavBtn span:nth-child(3) {
+				top: 28px;
+				-webkit-transform-origin: left center;
+				-moz-transform-origin: left center;
+				-o-transform-origin: left center;
+				transform-origin: left center;
+			}
+
+			.MobileNavBtn.open span:nth-child(1) {
+				-webkit-transform: rotate(45deg);
+				-moz-transform: rotate(45deg);
+				-o-transform: rotate(45deg);
+				transform: rotate(45deg);
+				top: 5px;
+				left: 6px;
+
+			}
+
+			.MobileNavBtn.open span:nth-child(2) {
+				width: 0%;
+				opacity: 0;
+			}
+
+			.MobileNavBtn.open span:nth-child(3) {
+				-webkit-transform: rotate(-46.5deg);
+				-moz-transform: rotate(-46.5deg);
+				-o-transform: rotate(-46.5deg);
+				transform: rotate(-46.5deg);
+				top: 38px;
+				left: 6px;
+			}
+
+
+
+			.MobileNavLinks .NavLink ul li input[type=search].MenuSearch {
+			    width: 30px;
+			    position: absolute;
+			    cursor: pointer;
+			    top: 43px;
+			    left: 38px;
+			    box-sizing: border-box;
+			    border: none;
+			    outline: none;
+			    border-radius: 4px;
+			    font-size: 16px;
+			    background-color: white;
+			    background-image: url('../Images/mag-glass.png');
+			    background-position: 10px 12px;
+			    background-repeat: no-repeat;
+			    padding: 12px 20px;
+			    -webkit-transition: width .4s ease-in-out;
+			    transition: width .4s ease-in-out;
+			}
+			.MobileNavLinks .NavLink ul li input[type=search].MenuSearch:focus {
+				width: 250px;
+			    padding: 12px 20px 12px 40px;
+			    border: 2px solid #ccc;
+			    cursor: text;
+			}
+			.MobileNavLinks .NavLink ul li a {
+			    display: block;
+			    padding: 0px 48px;
+			    text-align: left;
+			    text-decoration: none;
+			    font-weight: 700;
+			    text-transform: uppercase;
+			    font-size: 9.9pt;
+			    color: #558dbd;
+			}
+			.MobileNavLinks .NavLink ul li a.active, 
+			.MobileNavLinks .NavLink ul li a:hover  {
+				color: #203e64;
+			}
+				.MobileNavLinks .NavLink ul li a span.IconBag {
+				    height: 16px;
+				    width: 16px;
+				    position: relative;
+				    top: 3px;
+				    right: 6px;
+				    display: inline-block;
+				    background: url("../Images/IconBag.png") no-repeat;
+				}
+
+	.MobileNavLinks .NavLink .Results {
+			position: absolute;
+			left: 38px;
+			top: 90px;
+			width: 250px;
+			display: none;
+		}
+
+			.MobileNavLinks .NavLink .Results li {
+				list-style: none;
+				padding: 5px 10px;
+				background-color: #fff;
+				border: 1px solid #ccc;
+				border-top: none;
+			}
+
+			.MobileNavLinks .NavLink .Results li:hover {
+				background-color: #ccc;
+			}
+
+			.MobileNavLinks .NavLink .Results li span {
+				color: #454545;
+				font-weight: 400;
+			}
+
+			.MobileNavLinks .NavLink .Results a {
+				text-decoration: none;
+				font-weight: 600;
+				color: #558dbd;
+			}
+	.MobileNavLinks .ChooseLanguage{
+		position: relative;
+		cursor: pointer;
+		display: block;
+		width: 100%;
+		background-color: #efefef;
+		border-bottom: 1px solid #dadada;
+		font-size: 9.5pt;
+		font-weight: 400;
+		color: #8a8a8a;
+		font-family: 'Titillium Web', sans-serif;
+		padding: 10px 48px;
+		box-sizing: border-box;
+		z-index: 10;
+	}
+		.MobileNavLinks .ChooseLanguage .LanguagePicker{
+			display: none;
+			transition: none !important;
+		}
+			.MobileNavLinks .ChooseLanguage .LanguagePicker a {
+				color:#558dbd;
+				text-decoration:none;
+			}
+			.MobileNavLinks .ChooseLanguage .LanguagePicker a:hover {
+				color: #203e64;
+			}
+			.MobileNavLinks .ChooseLanguage .Icon.DAFlag {
+			    background: url("../Images/DenmarkFlag.png") no-repeat;
+			}
+			.MobileNavLinks .ChooseLanguage .Icon.ENFlag {
+			    background: url("../Images/EnglandFlag.png") no-repeat;
+			}
+			.MobileNavLinks .ChooseLanguage .Icon {
+			    height: 16px;
+			    width: 20px;
+			    position: relative;
+			    top: 3px;
+			    display: inline-block;
+			}
+			.MobileNavLinks .ChooseLanguage .Icon.DownArrow {
+			    background: url("../Images/DownArrow.png") no-repeat;
+			    left: 7px;
+			    top: 9px;
+			}
+				.MobileNavLinks .LanguagePicker {
+					position: relative;
+				    background-color: #EFEFEF;
+				    z-index: 999;
+				    display: none;
+				    transition: none;
+				}
+					.MobileNavLinks .LanguagePicker ul{
+						list-style-type: none;
+						margin: 10px 0px;
+						padding: 0;
+						transition: none;
+					}
+						.MobileNavLinks .LanguagePicker ul li{
+							list-style-type: none;
+							margin-top: 10px;
+							padding: 0;
+						}
+						.MobileNavLinks .LanguagePicker ul li:hover{
+							color: #558dbd;
+						}
+	
+
+
+.SectionHero {
+	background: url("../Images/HeroBG.jpg") no-repeat center;
+	background-size: cover;
+	height: 600px;
+}
+	.SectionHero h1.Heading {
+		font-size: 50px;
+	    font-weight: 700;
+	    line-height: 55px;
+	    color: #203e64;
+	    text-align: center;
+	    display: block;
+	    padding-top: 160px;
+	    text-transform:uppercase;
+	}
+	.SectionHero h2.SubHeading {
+        font-size: 18px;
+	    font-weight: 400;
+	    color: #203e64;
+	    text-align: center;
+	    display: block;
+	    padding-bottom: 40px;
+	    line-height: 30px;F
+	}
+	.SearchWrapper div {
+		position:relative;
+		width: 600px;
+		margin-left:auto;
+		margin-right:auto;
+	}
+	#SearchBar {
+	    width:calc(100%);
+	    padding-left: 30px;
+	    padding-right:38px;
+	    box-sizing:border-box;
+	    outline: none;
+	    height: 68px;
+	    display: block;
+	    background-color: #fff;
+	    border: none;
+	    font-size: 19px;
+	    font-weight: 300;
+	    font-family: 'Titillium Web';
+	    box-shadow: 0px 4px 13px 0px rgba(0, 0, 0, 0.18);
+	    border-radius: 0;
+	    -webkit-appearance: none;
+
+	}
+	#SearchButton {
+		background: url("../Images/plane.png") center no-repeat;
+		height:68px;
+		width:68px;
+		box-shadow: 0px 4px 13px 0px rgba(0, 0, 0, 0.18);
+		background-color: #fff;
+		border:none;
+		outline:none;
+		position:absolute;
+		right:0;
+		top:0;
+		cursor:pointer;
+		transition:all 0.4s;
+	}
+	#SearchButton:hover {
+		box-shadow: 0px 4px 13px 0px rgba(0, 0, 0, 0.30);
+	}
+.SectionLoungeHero {
+	background: url("../Images/LoungeHeroBG.jpg") no-repeat center;
+	background-size: cover;
+	height: 250px;
+}
+	.PressBanner {
+		background: url("../Images/PressHeroBG.jpg") no-repeat center;
+		background-size: cover;
+	}
+	.SectionLoungeHero h1.Heading {
+		font-size: 50px;
+	    font-weight: 700;
+	    line-height: 55px;
+	    color: #fff;
+	    text-align: center;
+	    display: block;
+	    text-transform:uppercase;
+	}
+	.SectionLoungeHero h2.SubHeading {
+        font-size: 20px;
+	    font-weight: 600;
+	    color: #fff;
+	    text-align: center;
+	    display: block;
+	    text-transform: uppercase;
+	    padding-top: 84px;
+	    line-height: 30px;
+	}
+
+.SectionTekstsideHero {
+	background: no-repeat center;
+	background-size: cover;
+	height: 250px;
+}		
+	.SectionTekstsideHero .ContainerSmall {
+		position:relative;
+	}
+
+	.SectionTekstsideHero .Overlay{
+		position:absolute;
+		width:100%;
+		height:250px;
+		top:0;
+		left:0;
+		background-color:#203e64;
+		opacity:0.5;
+	}
+
+	.ContentHeroHeading {
+		position:absolute;
+		width:100%;
+		z-index:1;
+	}
+	.SectionTekstsideHero h1.Heading {
+		font-size: 50px;
+	    font-weight: 700;
+	    line-height: 55px;
+	    color: #fff;
+	    text-align: center;
+	    display: block;
+	    padding-top: 90px;
+	}
+	.ImageBanner {
+		height: auto;
+	    width: 1050px;
+	    margin-left: -175px;
+	    margin-top:20px;
+	    margin-bottom:20px;
+	    overflow: hidden;
+	    position: relative;
+	}
+		.ImageBanner img {
+			width: 100%;
+			position: relative;
+			margin: auto !important;
+		}
+
+.SectionText {
+	background-color: #fff;
+	    padding: 50px 0 60px;
+	    padding-bottom: 10px;
+}
+	.SectionText .VideoBlock {
+	    padding-top: 40px;
+	}
+	.SectionText h3 {
+	    font-size: 35px;
+	    line-height: 35px;
+    	font-weight: 700;
+    	margin-bottom: 15px;
+		text-align: center;
+		display: block;
+		color: #203e64;
+		text-transform: uppercase;
+	}
+	.SectionText .TextBlock {
+		width:700px;
+		margin: 0px auto;
+
+	}
+
+	.SectionText .TextBlock * {
+		// text-align:left;
+	}
+
+
+		.SectionText .TextBlock h2 {
+			font-size: 35px;
+		    line-height: 35px;
+		    font-weight: 700;
+		    margin-bottom: 15px;
+		    text-align: center;
+		    display: block;
+		    color: #203e64;
+		    text-transform: uppercase;
+		}
+
+		.SectionText .TextBlock table {
+			width: 100%;
+			border-collapse: collapse;
+		}
+
+			.SectionText .TextBlock table tr {
+				background-color: #ededed;
+				height: 50px;
+			}
+
+				.SectionText .TextBlock table tr td {
+					padding: 5px 15px;
+					text-align: center;
+					color: #203e64;
+    				font-size: 18px;
+				}
+
+				.SectionText .TextBlock table tr td:first-child {
+					text-align: left;
+				}
+
+				.SectionText .TextBlock table tr td:last-child {
+					text-align: right;
+				}
+
+			.SectionText .TextBlock table thead tr {
+				background-color: #203e64;
+			}
+
+				.SectionText .TextBlock table tr th {
+					color: #fff;
+					text-transform: uppercase;
+					font-weight: 700;
+					text-align: center;
+					padding: 5px 15px;
+				}
+
+				.SectionText .TextBlock table tr th:first-child {
+					text-align: left;
+				}
+
+				.SectionText .TextBlock table tr th:last-child {
+					text-align: right;
+				}
+
+
+			.SectionText .TextBlock table tr:nth-child(even) {
+				background-color: #f5f5f5;
+			}
+
+		.SectionText .TextBlock div.video-container iframe{
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100% !important;
+			height: 100% !important;
+		}
+		.SectionText .TextBlock div.video-container{
+			position: relative;
+			padding-bottom: 56.25%; /* 16:9 */
+			padding-top: 25px;
+			height: 0;
+		}
+	.SectionText .TextBlock h2.SubHeading {
+	    font-size: 18px;
+	    font-weight: 400;
+	    color: #454545;
+	    text-align: center;
+	    display: block;
+	    text-transform: none;
+	    line-height: 30px;
+	    // padding: 0 160px;
+	}
+	.SectionText .TextBlock .HighlightedBox {
+		background: #203e64;
+        color: #fff;
+        position: relative;
+        padding: 45px 50px;
+        margin-bottom: 30px;
+	}
+		.SectionText .TextBlock .HighlightedBox .Headline{
+			position: relative;
+			margin-left: 50px;
+	        font-size: 20px;
+	        line-height: 35px;
+	        font-weight: 700;
+	        text-transform: uppercase;
+	        background: #203e64;
+	        color: #fff;
+	        min-height: 35px;
+		}
+		.SectionText .TextBlock .HighlightedBox .Thumb{
+			position: absolute;
+		    width: 35px;
+		    height: 35px;
+		    line-height: 35px;
+		    text-align: center;
+		    border-radius: 18px;
+		    background: #fff;
+		    color: #19345f;
+		    font-weight: 700;
+		    font-size: 25px;
+		}
+		.SectionText .TextBlock .HighlightedBox .Content {
+			margin-top: 15px;
+			font-size: 18px;
+			text-align: justify;
+		}
+	.SectionText .TextBlock > div.RowWidth100{
+		width:100%;
+	}
+	.SectionText .TextBlock > div.RowWidth60{
+		width:60%;
+	}
+	.SectionText .TextBlock > div.RowWidth50{
+		width:50%;
+	}
+	.SectionText .TextBlock > div.RowWidth40{
+		width:40%;
+	}
+
+	.SectionText .TextBlock > div.RowWidth100,
+	.SectionText .TextBlock > div.RowWidth60,
+	.SectionText .TextBlock > div.RowWidth50,
+	.SectionText .TextBlock > div.RowWidth40{
+		float: left;
+		box-sizing: border-box;
+		position:relative;
+	}
+
+	.SectionText .TextBlock > div.RowWidth100 figure{
+		font-size: 18px;
+	    font-weight: 400;
+	    color: #454545;
+	    text-align: justify;
+	    display: block;
+	    margin-top: 15px;
+	    margin-bottom: 20px;
+	    line-height: 30px;
+	}
+
+	.SectionText .TextBlock > div.RowWidth100:after,
+	.SectionText .TextBlock > div.RowWidth60:after,
+	.SectionText .TextBlock > div.RowWidth50:after,
+	.SectionText .TextBlock > div.RowWidth40:after,
+	.SectionText:after,.SectionText .TextBlock:after {
+		display:block;
+		content:' ';
+		clear:both;
+	}
+
+	.SectionText .TextBlock .PaddingLeft {
+		padding-left: 20px;
+	}
+
+	.SectionText .TextBlock .PaddingRight {
+		padding-right: 20px;
+	}
+	.SectionText .TextBlock p {
+	    font-size: 18px;
+	    font-weight: 400;
+	    color: #454545;
+	    text-align: justify;
+	    display: block;
+	    margin-top: 20px;
+	    margin-bottom:20px;
+	    line-height: 30px;
+	}
+
+	.SectionText .TextBlock figure {
+		margin: 38px 0 0;
+		padding: 0;
+		max-width: 100%;
+
+	}
+
+	.SectionText .TextBlock img {
+		margin:0;
+		padding:0;
+		max-width: 100%;
+	} 
+
+	.SectionText .TextBlock > div.RowWidth100 h3,
+	.SectionText .TextBlock > div.RowWidth60 h3
+	.SectionText .TextBlock > div.RowWidth50 h3
+	.SectionText .TextBlock > div.RowWidth40 h3 {
+		text-transform:uppercase;
+		font-size:20px;
+		color:#203e64;
+		font-weight: 600;
+		margin:0;
+		text-align: left;
+	}
+	.TextBlock ul {
+		padding:0 20px;
+	}
+	.TextBlock ul li {
+		margin-bottom:15px;
+		position:relative;
+		list-style-image: url('../Images/Bullet.png');
+	}
+
+	.TextBlock p a{
+		color:#558dbd;
+		text-decoration:none;
+	}
+
+	.TextBlock a {
+		color: #558dbd !important;
+    	text-decoration: none !important;
+	}
+
+	.TextBlock table span.Exclamation > span{
+		background-color: #203e64;
+	    color: #fff;
+	    width: 30px;
+	    height: 28px;
+	    display: inline-block;
+	    text-align: center;
+	    border-radius: 200px;
+	    margin-right: 10px;
+	    padding-top: 2px;
+	}
+
+/* ------------------------------------------------------------------------------------------------------
+CMS   
+------------------------------------------------------------------------------------------------------ */
+#CMSContent {
+	margin-bottom: 50px;
+}
+#CMSContent.SectionText {
+	margin-top:0;
+	padding:0;
+}
+.SectionText .TextBlock > div.RowWidth100 h2,
+.SectionText .TextBlock > div.RowWidth60 h2,
+.SectionText .TextBlock > div.RowWidth50 h2,
+.SectionText .TextBlock > div.RowWidth40 h2 {
+    font-size: 35px;
+    line-height: 35px;
+    font-weight: 700;
+    margin-top:60px;
+    margin-bottom: 30px;
+    text-align: center;
+    display: block;
+    color: #203e64;
+    text-transform: uppercase;
+}
+.SectionText .TextBlock > div.RowWidth100 h3,
+.SectionText .TextBlock > div.RowWidth60 h3,
+.SectionText .TextBlock > div.RowWidth50 h3,
+.SectionText .TextBlock > div.RowWidth40 h3 {
+	text-transform:uppercase;
+	font-size:20px;
+	color:#203e64;
+	font-weight: 600;
+	margin:0;
+	text-align:initial;
+	margin-bottom: -5px;
+}
+.SectionText .TextBlock > div.RowWidth100 p,
+.SectionText .TextBlock > div.RowWidth60 p,
+.SectionText .TextBlock > div.RowWidth50 p,
+.SectionText .TextBlock > div.RowWidth40 p{
+	font-size: 18px;
+    font-weight: 400;
+    color: #454545;
+    text-align: justify;
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 20px;
+    line-height: 30px;
+}
+.SectionText .TextBlock > div.RowWidth100 .ImageBanner {
+	height:400px;
+	margin-top:50px;
+}
+
+#CMSContent #JutlandBanner {
+	margin-top:50px;
+}
+
+.SectionText .TextBlock > div.RowWidth100 figure,
+.SectionText .TextBlock > div.RowWidth60 figure,
+.SectionText .TextBlock > div.RowWidth50 figure,
+.SectionText .TextBlock > div.RowWidth40 figure {
+	margin:0;
+}
+
+.SectionText .TextBlock > div.RowWidth60,
+.SectionText .TextBlock > div.RowWidth50,
+.SectionText .TextBlock > div.RowWidth40  {
+	margin-top:50px;
+}
+	.SectionText .TextBlock > div.RowWidth100 .HighlightedBox,
+	.SectionText .TextBlock > div.RowWidth60 .HighlightedBox,
+	.SectionText .TextBlock > div.RowWidth50 .HighlightedBox,
+	.SectionText .TextBlock > div.RowWidth40 .HighlightedBox {
+		background: #203e64;
+        color: #fff;
+        position: relative;
+        padding: 45px 50px;
+        margin-top: 10px;
+        margin-bottom: 30px;
+	}
+		.SectionText .TextBlock .HighlightedBox .Headline{
+			position: relative;
+			margin-left: 50px;
+	        font-size: 20px;
+	        line-height: 35px;
+	        font-weight: 700;
+	        text-transform: uppercase;
+	        background: #203e64;
+	        color: #fff;
+	        min-height: 35px;
+		}
+		.SectionText .TextBlock .HighlightedBox .Thumb{
+			position: absolute;
+		    width: 35px;
+		    height: 35px;
+		    line-height: 35px;
+		    text-align: center;
+		    border-radius: 18px;
+		    background: #fff;
+		    color: #19345f;
+		    font-weight: 700;
+		    font-size: 25px;
+		}
+		.SectionText .TextBlock .HighlightedBox .Content {
+			margin-top: 15px;
+			font-size: 18px;
+			text-align: justify;
+		}
+
+		.SectionText .TextBlock > div.RowWidth100 .text-center,
+		.SectionText .TextBlock > div.RowWidth60 .text-center,
+		.SectionText .TextBlock > div.RowWidth50 .text-center,
+		.SectionText .TextBlock > div.RowWidth40 .text-center {
+			text-align: center !important;
+		}
+		.SectionText .TextBlock > div.RowWidth100 .text-left,
+		.SectionText .TextBlock > div.RowWidth60 .text-left,
+		.SectionText .TextBlock > div.RowWidth50 .text-left,
+		.SectionText .TextBlock > div.RowWidth40 .text-left {
+			text-align: justify;
+		}
+		.SectionText .TextBlock > div.RowWidth100 .text-right,
+		.SectionText .TextBlock > div.RowWidth60 .text-right,
+		.SectionText .TextBlock > div.RowWidth50 .text-right,
+		.SectionText .TextBlock > div.RowWidth40 .text-right {
+			text-align: right !important;
+		}
+
+
+		.SectionText .TextBlock > div.RowWidth100 .CMSGoogleMaps,
+		.SectionText .TextBlock > div.RowWidth60 .CMSGoogleMaps,
+		.SectionText .TextBlock > div.RowWidth50 .CMSGoogleMaps,
+		.SectionText .TextBlock > div.RowWidth40 .CMSGoogleMaps {
+			height:40vh;
+			width:100%;
+			position:relative;
+		}
+/* ------------------------------------------------------------------------------------------------------
+   
+------------------------------------------------------------------------------------------------------ */
+.SectionFame {
+	background: url("../Images/FameBG.jpg") no-repeat center;
+	background-size: cover;
+	padding: 50px 0 10px 0;
+}
+	.SectionFame .TextBlock {
+		padding: 50px 0;
+	}
+	.SectionFame h3 {
+	    font-size: 35px;
+	    line-height: 35px;
+    	font-weight: 700;
+    	margin-bottom: 15px;
+		text-align: center;
+		display: block;
+		color: #fff;
+		text-transform: uppercase;
+	}
+	.SectionFame .TextBlock h2.SubHeading {
+	    font-size: 18px;
+	    font-weight: 400;
+	    color: #fff;
+	    text-align: center;
+	    display: block;
+	    padding: 0 160px;
+	    line-height: 30px;
+	}
+	.SectionFame .Portraits {
+		position: relative;
+		padding-bottom: 40px;
+	}
+	.SectionFame .Portraits .Portrait {
+		position: relative;
+		width: 16.66%;
+		margin-bottom: 20px;
+		display: inline-block;
+		float: left;
+	}
+
+.ArrivalsDepartures {
+
+}
+
+	.ArrivalsDepartures .FlightsWrapper {
+        width: 100%;
+        position: relative;
+        font-size: 18px;
+    	font-weight: 300;
+    	height: 100%;
+    	margin: 0 auto;
+    }
+    .ArrivalsDepartures .FlightsTable {
+        width: 100%;
+        left: 0;
+        margin-top: 285px;
+        border-top: 1px solid rgb(209, 209, 209);
+        position: absolute;
+        display: inline-block;
+    }
+    .ArrivalsDepartures .FlightsTable table {
+    	background-color: #fff;
+		color: #203e64;
+		width: 100%;
+		margin: 0 auto;
+		position: relative; 
+		border-collapse: collapse;
+		font-size: 14px;
+		font-weight: 500;
+    }
+
+    .ArrivalsDepartures .FlightsTable td:first-child,
+	.ArrivalsDepartures .FlightsTable th:first-child,
+	.ArrivalsDepartures .FlightsTable td:last-child,
+	.ArrivalsDepartures .FlightsTable th:last-child {
+		width: 240px;
+	}
+
+	.ArrivalsDepartures .FlightsTable td:nth-child(7),
+	.ArrivalsDepartures .FlightsTable th:nth-child(7) {
+		text-align: right;
+	}
+
+	.ArrivalsDepartures .FlightsTable td:nth-child(2),
+	.ArrivalsDepartures .FlightsTable th:nth-child(2) {
+		text-align: left;
+	}
+
+	.ArrivalsDepartures .FlightsTable td:nth-child(3),
+	.ArrivalsDepartures .FlightsTable th:nth-child(3) {
+		text-align: center;
+	}
+
+	.ArrivalsDepartures .FlightsTable td {
+		height: 50px;
+		width: 160px;
+	}
+
+	.ArrivalsDepartures .FlightsTable .DateRow td {
+		height: 0;
+	}
+
+	.ArrivalsDepartures .FlightsTable th {
+		width: 160px;
+		height: 60px;
+		text-align: left;
+		text-transform: uppercase;
+	}
+
+	.ArrivalsDepartures .FlightsTable td span {
+		color: #558dbd;
+	}
+
+	.ArrivalsDepartures .FlightsTable .OddRow {
+		background-color: #f6f6f6;
+	}
+
+	.ArrivalsDepartures .FlightsTable .EvenRow {
+		background-color: #fff;
+	}
+
+	.ArrivalsDepartures .FlightsTable .DateRow {
+		background-color: #203e64;
+		color: #fff;
+		display: none;
+	}
+
+	.ArrivalsDepartures .FlightsTable .TableHeader {
+	    padding-left: 70px;
+	    padding-top: 12px;
+	    display: inline-block;
+	    text-transform: uppercase;
+	}
+
+	.ArrivalsDepartures .FlightsHeader#dep {
+		background-image: url("../Images/depSkyBG.png");
+		background-repeat: no-repeat;
+		background-position: left 0;
+		margin-left: calc(50% - 210px);
+	}
+
+	.ArrivalsDepartures .FlightsHeader#arr {
+		background-image: url("../Images/arrSkyBG.png");
+		background-repeat: no-repeat;
+		background-position: left 0;
+		margin-left: calc(50% + 10px);
+	}
+
+	.ArrivalsDepartures .FlightsHeader {
+		height: 48px;
+		color: #6899c4;
+		font-weight: bold;
+		margin-top: -50px;
+		padding-left: 10px;
+        width: 200px;
+        background-color: #f6f6f6;
+        border: 1px solid rgb(209, 209, 209);
+        border-bottom: 1px solid rgb(209, 209, 209);
+        cursor: pointer;
+        position: relative;
+	}
+
+    .ArrivalsDepartures .Selected {
+        background-color: #fff;
+        color: #203e64;
+        z-index: 1;
+        border-bottom: 1px solid #fff;
+    }
+
+    .ArrivalsDepartures .Selected#dep {
+        background-image: url("../Images/depDarkBG.png");
+    }
+
+    .ArrivalsDepartures .Selected#arr {
+        background-image: url("../Images/arrDarkBG.png");
+    }
+
+    .ArrivalsDepartures .FlightsTable#Arrivals table {
+        display: none
+    }
+
+.SectionTableLounge {
+	background-color: #fff;
+}
+	.SectionTableLounge h3 {
+	    font-size: 35px;
+	    line-height: 35px;
+    	font-weight: 700;
+    	margin-bottom: 15px;
+		text-align: center;
+		display: block;
+		color: #203e64;
+		text-transform: uppercase;
+	}
+	.SectionTableLounge .ELounge h2.SubHeading {
+	    font-size: 18px;
+	    font-weight: 400;
+	    color: #454545;
+	    text-align: center;
+	    display: block;
+	    line-height: 30px;
+	    padding: 0 270px;
+	}
+	.SectionTableLounge .FlightsWrapper {
+	    margin: 0 auto;
+    	font-size: 18px;
+    	font-weight: 300;
+    	height: 250px;
+	}
+	.SectionTableLounge .FlightsTable {
+		display: inline-block;
+		width: 48%;
+	}
+	.SectionTableLounge .FlightsTable .FrontPageTable {
+		height: 265px;
+		width: 100%;
+		overflow: hidden;
+	}
+	.SectionTableLounge .FlightsTable table{
+		background-color: #203e64;
+		color: white;
+		width: 100%;
+		margin: 0 auto;
+		position: relative; 
+		border-collapse: collapse;
+	}
+	.SectionTableLounge .FlightsTable table.loader {
+		height:263px;
+	}
+	.SectionTableLounge .FlightsTable table.loader td {
+		text-align: center;
+		padding:0;
+	}
+	.SectionTableLounge .FlightsTable td {
+		height: 50px;
+		padding-left: 25px;
+		width: 33%;
+	}
+
+	.SectionTableLounge .FlightsTable td:nth-child(2) {
+		text-align: center;
+	}
+	.SectionTableLounge .FlightsTable td span {
+		color: #558dbd;
+	}
+	.SectionTableLounge .FlightsTable td:nth-child(3n+3) {
+		text-align: right;
+		padding-right: 25px;
+	}
+	.SectionTableLounge .FlightsTable tr {
+		border-bottom: 1px solid #325882;
+	}
+	.SectionTableLounge .TableHeader {
+	    padding-left: 70px;
+	    padding-top: 17px;
+	    display: inline-block;
+	    text-transform: uppercase;
+	}
+	.SectionTableLounge .FlightsHeader#FrontPageDep {
+		background-image: url("../Images/depBG.png");
+		background-repeat: no-repeat;
+		background-position: left 0;
+	}
+	.SectionTableLounge .FlightsHeader#FrontPageArr {
+		background-image: url("../Images/arrivalBG.png");
+		background-repeat: no-repeat;
+		background-position: left 0;
+	}
+	.SectionTableLounge .FlightsHeader {
+		height: 60px;
+    	background-color: #fff;
+		color: #203e64;
+		width: 100%;
+		font-weight: bold;
+		margin-top: -62px;
+	}
+	.PlaneImg {
+		display: inline-block;
+		padding-left: 25px;
+		padding-top: 15px;
+	}
+	.TableLink {
+		display: inline-block;
+		float: right;
+		font-size: 15px;
+		color: #558dbd;
+    	padding-right: 25px;
+    	padding-top: 19px;
+	}
+	.TableLink a {
+		text-decoration: none;
+		color: #558dbd;
+		cursor: pointer;
+		text-transform: uppercase;
+	}
+	.SectionTableLounge .FlightsWrapper img {
+		margin-left: -5px;
+		vertical-align: middle;
+	}
+	.SectionTableLounge .FlightsWrapper img#arrow {
+		padding-left: 15px;
+		padding-bottom: 2.54px;
+	}
+	.SectionTableLounge .FlightsTable#Arrivals {
+		float: right;
+	}
+	.SectionTableLounge .FlightsTable#Departures {
+		float: left;
+	}
+	.SectionTableLounge .ELounge {
+	    margin: 80px auto 60px auto;
+	}
+
+.SectionFacilities .FacilityBox {
+	width: 25%;
+	position: relative;
+	float: left;
+	text-align: center;
+	height: 24.5vw;
+	display: table;
+	cursor: pointer;
+	background-size: 100% 100%;
+	-moz-transition: all 0.5s ease;
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+    overflow: hidden;
+}
+.SectionFacilities .FacilityBox#Facility1 div:hover,
+.SectionFacilities .FacilityBox#Facility2 div:hover,
+.SectionFacilities .FacilityBox#Facility3 div:hover,
+.SectionFacilities .FacilityBox#Facility4 div:hover,
+.SectionFacilities .FacilityBox#Facility5 div:hover,
+.SectionFacilities .FacilityBox#Facility6 div:hover,
+.SectionFacilities .FacilityBox#Facility7 div:hover,
+.SectionFacilities .FacilityBox#Facility8 div:hover  {
+	// background-size: 125% 125%;
+	-moz-transition: all 0.5s ease;
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+
+    transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+}
+.SectionFacilities .FacilityBox div:hover h4 {
+	-moz-transition: all 0.5s ease;
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+
+	transform: scale(0.833);
+    -webkit-transform: scale(0.833);
+    -moz-transform: scale(0.833);
+    -ms-transform: scale(0.833);
+}
+.SectionFacilities .FacilityBox div, 
+.SectionFacilities .SubPageFacilities .FacilityBox div {
+	display: table-cell;
+	vertical-align: middle;
+}
+.SectionFacilities .FacilityBox div a, 
+.SectionFacilities .SubPageFacilities .FacilityBox div a {
+	text-decoration: none;
+}
+.FacilityBox#Facility1 div {
+    background: url('../Images/Facility1.png') center no-repeat;
+    background-size: 100% 100%;
+    -moz-transition: all 0.5s ease;
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+.FacilityBox#Facility2 div {
+    background: url('../Images/Facility2.png') center no-repeat;
+    background-size: 100% 100%;
+    -moz-transition: all 0.5s ease;
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+.FacilityBox#Facility3 div {
+    background: url('../Images/Facility3.png') center no-repeat;
+    background-size: 100% 100%;
+    -moz-transition: all 0.5s ease;
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+.FacilityBox#Facility4 div {
+    background: url('../Images/Facility4.png') center no-repeat;
+    background-size: 100% 100%;
+    -moz-transition: all 0.5s ease;
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+.FacilityBox#Facility5 div {
+    background: url('../Images/Facility5.png') center no-repeat;
+    background-size: 100% 100%;
+    -moz-transition: all 0.5s ease;
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+.FacilityBox#Facility6 div {
+    background: url('../Images/Facility6.png') center no-repeat;
+    background-size: 100% 100%;
+    -moz-transition: all 0.5s ease;
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+.FacilityBox#Facility7 div {
+    background: url('../Images/Facility7.png') center no-repeat;
+    background-size: 100% 100%;
+    -moz-transition: all 0.5s ease;
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+.FacilityBox#Facility8 div {
+    background: url('../Images/Facility8.png') center no-repeat;
+    background-size: 100% 100%;
+    -moz-transition: all 0.5s ease;
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+.SectionFacilities .SubPageFacilities .FacilityBox {
+	width: 25%;
+	position: relative;
+	float: left;
+	text-align: center;
+	height: 15vw;
+	display: table;
+	cursor: pointer;
+	-moz-transition: all .5s;
+    -webkit-transition: all .5s;
+    transition: all .5s;
+}
+	.SectionFacilities .FacilityBox h4 {
+		color: #fff;
+		font-size: 28px;
+        margin-left: auto;
+	    margin-right: auto;
+	    text-transform: uppercase;
+	    -moz-transition: all 0.5s ease;
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+	}
+	.SectionFacilities .SubPageFacilities .FacilityBox h4 {
+		color: #fff;
+		font-size: 27.2px;
+        margin-left: auto;
+	    margin-right: auto;
+	}
+.SectionBannerLink {
+    padding: 65px 0;
+    position: relative;
+}
+	.SectionBannerLink .Overlay{
+		position:absolute;
+		width:100%;
+		height:100%;
+		top:0;
+		left:0;
+		background-color:#203e64;
+		opacity:0.5;
+	}
+	.SectionBannerLink .BannerContent {
+		width: 50%;
+		display: inline-block;
+		float: right;
+		margin-top: 110px;
+		position: relative;
+		z-index: 2;
+	
+		position: absolute;
+		top: 50%;
+		transform: translateY(-50%);
+	}
+	.SectionBannerLink .BannerContent.NoAbsolute {
+        right:0;
+        margin-top:0;
+    }
+
+    .SectionBannerLink .BannerContent.IEFixBannerContent {
+    	position:relative;
+    	top:0;
+    	transform:0;
+    }
+
+    #FacebookBanner.NoAbsolute{
+    	position: relative;
+		top: 0;
+		transform: none;
+    }
+.SectionBannerLink#FacebookSection {
+    padding: 85px 0;
+}
+	.SectionBannerLink h3 {
+	    font-size: 35px;
+	    line-height: 35px;
+    	font-weight: 700;
+    	margin-bottom: 15px;
+		text-align: left;
+		display: block;
+		color: #203e64;
+		text-transform: uppercase;
+	}
+	.SectionBannerLink h2.SubHeading {
+	    font-size: 18px;
+	    font-weight: 400;
+	    color: #454545;
+	    text-align: left;
+	    line-height: 30px;
+	}
+	.SectionBannerLink .BannerContent#FacebookBanner {
+		float: left;
+		margin-top: 70px;
+	}
+	.SectionBannerLink .BannerContent#FacebookBanner img {
+		margin: 20px 0 15px;
+	}
+	.SectionBannerLink iframe {
+		margin: 0 auto;
+    	display: block;
+	}
+	.SectionBannerLink#SkiBanner {
+		background: url('../Images/SkiBG.jpg') center no-repeat;
+		background-size: cover;
+	}
+	.SectionBannerLink .BannerContent#Ski {
+		float: left;
+		margin-top: 0;
+		padding: 20px 0;
+	}
+	.SectionBannerLink .BannerContent#Ski h3, .SectionBannerLink .BannerContent#Ski h2.SubHeading {
+		color: #fff;
+		line-height: 30px;
+	}
+	.SectionBannerLink#TransportBanner {
+		background: url('../Images/TransportBG.jpg') center no-repeat;
+		background-size: cover;
+	}
+	.SectionBannerLink .BannerContent#Transport {
+		float: left;
+		margin-top: 0;
+		padding: 20px 0;
+	}
+	.SectionBannerLink .BannerContent#Transport h3, .SectionBannerLink .BannerContent#Transport h2.SubHeading {
+		color: #fff;
+		line-height: 30px;
+	}
+	.SectionBannerLink#JutlandBanner {
+		background: url('../Images/JutlandBG.jpg') center no-repeat;
+		background-size: cover;
+	}
+	#JutlandBanner, #SkiBanner, #TransportBanner {
+		min-height: 400px;
+    	box-sizing: border-box;
+	}
+	.BannerBtnWrapper {
+		margin-top:40px;
+	}
+	.SectionBannerLink .BannerContent#Jutland {
+		float: left;
+		margin-top: 0;
+		padding: 20px 0;
+	}
+	.SectionBannerLink .BannerContent#Jutland h3, .SectionBannerLink .BannerContent#Jutland h2.SubHeading {
+		color: #fff;
+		line-height: 30px;
+	}
+	.SectionBannerLink .BannerContent#Jutland h3 {
+		font-size: 34.6px;
+		line-height: 34.6px;
+	}
+	.SectionBannerLink .BannerContent#Jutland h2 {
+		font-size: 18px;
+	    font-weight: 400;
+	    color: #fff;
+	    text-align: left;
+	}
+	.SectionBannerLink .BannerImage {
+		width: 50%;
+		display: inline-block;
+		float: left;
+	}
+	.SectionBannerLink .BannerImage img {
+		width: 87%;
+		position: relative;
+	}
+	.SectionBannerLink .BannerContent .BannerBtnWrapper {
+		width: 150px;
+	    background-color: #203e64;
+	    text-align: center;
+	    margin-top: 30px
+	    -moz-transition: all 0.5s ease;
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+	}
+	.SectionBannerLink .BannerContent .BannerBtnWrapper:hover {
+		background-color: #558dbd;
+		-moz-transition: all 0.5s ease;
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+	}
+	.SectionBannerLink .BannerContent .BannerBtnWrapper a.BannerBtn {
+	    color: white;
+	    text-decoration: none;
+	    font-size: 14px;
+	    font-weight: 700;
+	    text-transform: uppercase;
+	    display: block;
+    	line-height: 50px;
+	}
+
+.SectionTestimonials {
+    padding: 69px 0;
+}
+	.SectionTestimonials h3 {
+	    font-size: 35px;
+	    line-height: 35px;
+    	font-weight: 700;
+    	margin-bottom: 15px;
+		text-align: center;
+		display: block;
+		color: #203e64;
+		text-transform: uppercase;
+	}
+
+	.SectionTestimonials h2 {
+	    font-size: 18px;
+	    font-weight: 400;
+	    color: #454545;
+	    text-align: left;
+	}
+
+	.SectionTestimonials p {
+		font-size: 15px;
+    	color: #558dbd
+	}
+
+	.Testimonial {
+	    display: inline-block;
+	    width: 49%;
+		margin-top: 40px;
+	}
+
+	.Testimonial .ProfilePic {
+	    display: inline-block;
+	    width: 29%;
+	}
+
+	.Testimonial .Quote {
+	    display: inline-block;
+	    width: 61%;
+	}
+	.Testimonial img#Previous, .Testimonial img#Next{
+		display: none;
+	}
+	.Portrait img#Previous, .Portrait img#Next{
+		display: none;
+	}
+.Ad {
+	position: relative;
+    width: 100%;
+    display: block;
+    margin: 50px auto;
+}
+.Ad img {
+	width: 100%;
+    position: relative;
+    display: block;
+    margin: 0;
+}
+.Video {
+	position: relative;
+    width: 100%;
+    display: table;
+    margin: 50px auto;
+}
+.Video video {
+    position: relative;
+    display: block;
+    margin: 0 auto;
+    width: 90%;
+    max-width: 800px;
+    cursor: pointer;
+}
+.playpause {
+    background-image:url("../Images/play.png");
+    background-repeat:no-repeat;
+    width:12%;
+    position:absolute;
+    left:0%;
+    right:0%;
+    top:0%;
+    bottom:0%;
+    margin:auto;
+    background-size:contain;
+    background-position: center;
+    cursor: pointer;
+}
+
+.SectionContactHero {
+	background: url("../Images/ContactHeroBG.jpg") no-repeat center;
+	background-size: cover;
+	height: 250px;
+}
+	.SectionContactHero h2.Heading {
+		font-size: 50px;
+	    font-weight: 700;
+	    line-height: 55px;
+	    color: #fff;
+	    text-align: center;
+	    display: block;
+	    padding-top: 100px;
+	    text-transform: uppercase;
+	}
+
+	h4.TextCenter{
+		font-size: 18px;
+		font-weight: 400;
+		color: #454545;
+		text-align: center;
+		display: block;
+	}
+	.ContactNumbers:after {
+		display:block;
+		content:'';
+		clear:both;
+	}
+	.ContactNumbers .ContactBox {
+		float:left;
+		width:calc(100% / 3);
+	}
+	.ContactNumbers .ContactBox .ContactDeskName {
+		font-size: 20px;
+		font-weight: 600;
+		color: #203e64;
+		margin-bottom: 25px;
+		text-transform:uppercase;
+	}
+	.ContactNumbers .ContactBox .ContactDetails {		
+		position:relative;
+	}
+	.ContactNumbers .ContactBox .ContactDetails a {
+		font-size: 18px;
+		color: #454545;
+		text-decoration:none;
+	}
+	.ContactNumbers .ContactBox .ContactDetails span {
+		position:absolute;
+		width:50%;
+		left: 75px;
+	}
+
+	#ContactMap{
+		width:100%;
+		height:500px;
+		margin-top:60px;
+	}
+
+	.BlueContainer {
+		background-color:#203e64;
+		color:white;
+		padding:60px 0;
+		text-align: center;
+	}
+	.BlueContainer .TextBlock {
+		// width:700px;
+	}
+	.BlueContainerHeading {
+		font-size:32px;
+		font-weight:bold;
+		margin-bottom:15px;
+		text-transform:uppercase;
+	}
+	.BlueContainerParagraph  {
+		margin-bottom:15px;
+		line-height:32px;
+		font-size:18px;
+		color:#fff;
+	}
+	.BlueContainerEmail a{
+		font-size:28px;
+		color:#fff;
+		text-decoration:none;
+	}
+
+	.MoreNumbers {
+		margin-top:10px;
+		margin-bottom: 40px;
+	}
+	.ContactNumbers .ContactBox .MoreNumbers .ContactDeskName {
+		margin-bottom:3px;
+	}
+/* ------------------------------------------------------------------------------------------------------
+   CMS CONTENT
+------------------------------------------------------------------------------------------------------ */
+
+.ContentHeroHeading {
+	text-transform: uppercase;
+}
+
+.FooterBar{
+		background-color: #fff;
+		width: inherit;
+		height: auto;
+	    width: 100%;
+	}
+
+		.FooterSocial {
+
+		}
+			.SocialBox {
+				width: 25%;
+				height: 80px;
+				text-align: center;
+			    position: relative;
+			    float: left;
+			    cursor: pointer;
+			    opacity: 1;
+			    -moz-transition: all 0.3s ease;
+			    -webkit-transition: all 0.3s ease;
+			    transition: all 0.3s ease;
+			}
+			.SocialBox:hover {
+				opacity: 0.8;
+				-moz-transition: all 0.3s ease;
+			    -webkit-transition: all 0.3s ease;
+			    transition: all 0.3s ease;
+			}
+			.SocialBox a {
+				line-height: 80px;
+				font-weight: 600;
+			    color: #fff;
+			    text-decoration: none;
+			    text-transform: uppercase;
+			}
+			.SocialBox img {
+				vertical-align: middle;
+			}
+				#LinkedIn {
+					background-color: #0077b5;
+				}
+				#Facebook {
+					background-color: #405d9a;
+				}
+				#Youtube {
+					background-color: #cc181e;
+				}
+				#Newsletter {
+					background-color: #203e64;
+				}
+
+		.FooterNav {
+			margin: 30px auto;
+		}
+			.FooterColumns {
+				width: 100%;
+			}
+				.NavColumn {
+					width: 16.6%;
+					float: left;
+					height: auto;
+				}
+				.ColumnHeader {
+					text-transform: uppercase;
+					color: #203e64;
+					font-weight: bold;
+					margin-bottom: 30px;
+					font-size: 14px;
+				}
+				.NavColumn a {
+					display: block;
+					text-decoration: none;
+					color: #847A7A;
+					font-size: 15px;
+					font-weight: 300;
+				}
+				.NavColumn a:hover {
+					color: #203e64;
+				}
+				.NavColumn img {
+					display: none;
+				}
+		.FooterBottomBar {
+			height: 50px;
+			background-color: #203e64;
+		}
+			.Copyright {
+				display: inline-block;
+				float: left;
+				color: #fff;
+				line-height: 50px;
+				font-weight: 300;
+				font-size: 14px;
+			}
+			.Copyright p {
+				color: #fff;
+			}
+			.xwarecms {
+				float: right;
+    			display: inline-block;
+			}
+
+			.xwarecms a {
+				text-decoration: none;
+				color: #fff;
+				line-height: 50px;
+				font-weight: 300;
+				font-size: 14px;
+			}
+
+
+
+.InfoboxTable {
+    width: 100%;
+    border: 1px solid #e5e5e5;
+}
+
+.InfoboxTable td {
+    padding: 10px;
+}
+
+.infoBox .Headline {
+    padding: 10px;
+    font-size: 14px;
+    font-weight: bold;
+    background: #19345f;
+    color: #fff;
+    text-align: center;
+}
+
+.Right {
+    text-align: right;
+}
+
+.Filters.MapPage {
+	height: 131px;
+	z-index: 1;
+}
+
+.Filters.FullHeight {
+	height: 131px;
+}
+
+.Filters.NoHeight {
+	height: 0;
+}
+
+.Filters {
+	background-color: rgba(246, 246, 246, 0.902);
+	box-shadow: 0px 1px 0px 0px rgba(0, 0, 0, 0.1);
+	position: fixed;
+	top: 120px;
+	width: 100%;
+	height: 50px;
+	z-index: 8;
+}
+
+	.Filters .Buttons button {
+		background: transparent;
+	    border: none;
+	    line-height: 48px;
+	    margin-right: 10px;
+	    color: #538cbf;
+	    font-weight: 600;
+	    cursor: pointer;
+	    outline: 0;
+	    font-size: 14px;
+	    font-family: 'Titillium Web',sans-serif;
+	    text-transform: uppercase;
+	}
+
+	.Filters .Buttons button.Active,
+	.Filters .Buttons button:hover {
+	    line-height: 45px;
+	    border-bottom: 2px solid #203e64;
+	    color: #203e64;
+	}
+
+	.Filters .Buttons .Checkboxes {
+		float: right;
+		line-height: 49px;
+	}
+
+	.Filters .Buttons.Mobile {
+		width: 100%;
+	}
+
+	.Filters .Buttons.Mobile .Checkboxes {
+		display: none;
+		line-height: 39px;
+		width: 100%; 
+		text-align: center;
+		-webkit-box-shadow: 0 1px 0 0 rgba(0,0,0,.1);
+	    -moz-box-shadow: 0 1px 0 0 rgba(0,0,0,.1);
+	    box-shadow: 0 1px 0 0 rgba(0,0,0,.1);
+	}
+
+	.Filters .Buttons.Mobile .Checkboxes label {
+		margin: 20px;
+	}
+
+	input[type="checkbox"] {
+		display: none;
+	}
+
+	input[type="checkbox"] + label span {
+	    display:inline-block;
+	    width: 20px;
+	    height: 20px;
+	    background: url("../Images/checkboxes.png") -20px top no-repeat;
+	    margin: -3px 10px 0 0;
+    	vertical-align: middle;
+
+	}
+
+	input[type="checkbox"]:checked + label span {
+	    background: url("../Images/checkboxes.png") 0px top no-repeat;
+	}
+
+	.Filters .Buttons .Checkboxes label {
+		color: #203e64;
+		font-size: 17px;
+		margin-left: 40px;
+		cursor: pointer;
+	}
+
+
+.BorderBottom {
+    border-bottom: 1px solid #e5e5e5;
+}
+
+        a.Button {
+            background: #19345f;
+            padding: 4px;
+            color: #fff;
+            font-size: 12px;
+            cursor: pointer;
+            text-align: center;
+            width: 80px;
+            float: left;
+            text-decoration: none;
+            margin-right: 10px;
+        }
+
+        a.Button:last-child {
+        	margin-right: 0px;
+        }
+
+        .MapContainer {
+        }
+
+        .MapContainer .Buttons {
+        	float: left;
+        	bottom: 0;
+        	position: absolute;
+        	z-index: 10;
+        	padding: 5px;
+        	border: 2px solid #1e3d65;
+        	background-color: #fff;
+        }
+
+        .MapContainer button {
+    	    background: #ececec;
+			border: none;
+		    padding: 10px;
+		    color: #787878;
+		    font-weight: bold;
+		    padding-left: 30px;
+		    padding-right: 30px;
+		    cursor: pointer;
+		    outline: none;
+        }
+
+        .MapContainer button.Active {
+            color: #fff;
+            background: #19345f;
+        }
+
+.NoMarginTop {
+	margin-top: 0;
+}
+
+.TableDrop,
+.MapDrop,
+.Filters {
+	height: 0%;
+	overflow: hidden;
+}
+
+.ParkingHero {
+	background: url("../Images/ParkingBG.jpg"); 
+	background-size:cover;
+	background-repeat: no-repeat;
+}
+
+	#ParkingPrice{
+		font-size:18px;
+	}
+		#ParkingPrice td {
+			color:#203e64;
+		}
+
+
+		#ParkingPrice tr:last-child td {
+			text-align:left;
+		}
+		#ParkingPrice tr:last-child span{
+			background-color:#203e64;
+			color: #fff;
+			width: 30px;
+			height: 28px;
+			display: inline-block;
+			text-align: center;
+			border-radius: 200px;
+			margin-right: 10px;
+			padding-top: 2px;
+		}
+
+		#TextContainer {
+			font-family:inherit;
+			font-size: 18px;
+			margin-top:50px;
+		}
+
+			#TextContainer h5 {
+				text-transform:uppercase;
+				font-size:20px;
+				color:#203e64;
+				font-weight: 600;
+				margin:10px 0;
+			}
+
+			#TextContainer p {
+				// margin-bottom:30px;
+				margin:0;
+			}
+			
+			#TextContainer div.BlankHeight {
+				height:10px;
+			}
+
+			#TextContainer ul {
+				padding:0 20px;
+			}
+			#TextContainer ul li {
+				margin-bottom:15px;
+				position:relative;
+			}
+
+			#TextContainer p a{
+				color:#558dbd;
+				text-decoration:none;
+			}
